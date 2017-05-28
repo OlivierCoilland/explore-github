@@ -600,7 +600,6 @@ repo_id,repo_name,repo_full_name,repo_description,repo_html_url,repo_stargazers_
 50325206,SmoothCheckBox,andyxialm/SmoothCheckBox,A custom CheckBox with animation for Android.,https://github.com/andyxialm/SmoothCheckBox,1059,5976556,andyxialm,https://github.com/andyxialm
 29375063,decaffeinate,decaffeinate/decaffeinate,"Goodbye CoffeeScript, hello JavaScript!",https://github.com/decaffeinate/decaffeinate,1059,16957091,decaffeinate,https://github.com/decaffeinate
 38744670,patroni,zalando/patroni,"A template for PostgreSQL High Availability with ZooKeeper, etcd, or Consul",https://github.com/zalando/patroni,1059,1564818,zalando,https://github.com/zalando
-29375063,decaffeinate,decaffeinate/decaffeinate,"Goodbye CoffeeScript, hello JavaScript!",https://github.com/decaffeinate/decaffeinate,1059,16957091,decaffeinate,https://github.com/decaffeinate
 9934972,sagan,spring-io/sagan,The spring.io site and reference application,https://github.com/spring-io/sagan,1059,5138804,spring-io,https://github.com/spring-io
 13234048,clumsy,jagt/clumsy,"clumsy makes your network condition on Windows significantly worse, but in a controlled and interactive manner.",https://github.com/jagt/clumsy,1059,241128,jagt,https://github.com/jagt
 12777019,PHP-FIG,PizzaLiu/PHP-FIG,PHP-FIG PSR中文版,https://github.com/PizzaLiu/PHP-FIG,1059,2627403,PizzaLiu,https://github.com/PizzaLiu
@@ -2044,7 +2043,6 @@ repo_id,repo_name,repo_full_name,repo_description,repo_html_url,repo_stargazers_
 1450993,Han,ethantw/Han,「漢字標準格式」印刷品般的漢字排版框架 Han.css: the CSS typography framework optimised for Hanzi.,https://github.com/ethantw/Han,1225,31068,ethantw,https://github.com/ethantw
 2883533,wordmove,welaika/wordmove,Capistrano for Wordpress,https://github.com/welaika/wordmove,1225,278653,welaika,https://github.com/welaika
 47747722,go-is-not-good,ksimka/go-is-not-good,A curated list of articles complaining that go (golang) isn't good enough,https://github.com/ksimka/go-is-not-good,1225,1818850,ksimka,https://github.com/ksimka
-17035253,fuck-you,robotlolita/fuck-you, (╯°□°）╯︵sǝssǝɔoɹd oʎ llɐ llıʞǝɓɐɹ,https://github.com/robotlolita/fuck-you,1226,406477,robotlolita,https://github.com/robotlolita
 17035253,fuck-you,robotlolita/fuck-you, (╯°□°）╯︵sǝssǝɔoɹd oʎ llɐ llıʞǝɓɐɹ,https://github.com/robotlolita/fuck-you,1226,406477,robotlolita,https://github.com/robotlolita
 8698598,Lin,questbeat/Lin, Xcode plugin that provides auto-completion for NSLocalizedString.,https://github.com/questbeat/Lin,1226,1830355,questbeat,https://github.com/questbeat
 10880863,GlassActionBar,ManuelPeinado/GlassActionBar,Android - a library that adds a glass-like effect to the action bar.,https://github.com/ManuelPeinado/GlassActionBar,1226,2700015,ManuelPeinado,https://github.com/ManuelPeinado

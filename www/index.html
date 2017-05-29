@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>A GitHub exploration story</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <style type="text/css">
+    html, body, #container {
+      height: 100%;
+    }
+
+    #overlay {
+      position: fixed;
+      width: 25%;
+      top: 0;
+      bottom: 0;
+      background-color: #ccc;
+      z-index: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <p><a href="" id="owner_login" target="_blank"></a> / <a href="" id="repo_name" target="_blank"></a></p>
+    <p id="repo_description"></p>
+    <p id="repo_stargazers_count"></p>
+  </div>
+
+  <div id="container"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/sigma.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/plugins/sigma.parsers.json.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sigma.js/1.2.0/plugins/sigma.layout.forceAtlas2.min.js"></script>
+  <script>
+    sigma.parsers.json(
+      "/data.json",
+      {
+        container: 'container'
+      },
+      function (s) {
+        var nodes = s.graph.nodes();
+        var length = nodes.length;
+        for (var i = 0; i < length; i++) {
+          nodes[i].x = Math.random();
+          nodes[i].y = Math.random();
+        }
+        s.refresh();
+        s.startForceAtlas2({
+          worker: true,
+          strongGravityMode: true
+        });
+        setTimeout(function () {
+          s.stopForceAtlas2();
+        }, 2000);
+        s.bind('clickNode', function(e) {
+          var data = e.data.node;
+          document.getElementById('owner_login').innerHTML = data.owner_login;
+          document.getElementById('owner_login').href = data.owner_html_url;
+          document.getElementById('repo_name').innerHTML = data.repo_name;
+          document.getElementById('repo_name').href = data.repo_html_url;
+          document.getElementById('repo_description').innerHTML = data.repo_description;
+          document.getElementById('repo_stargazers_count').innerHTML = 'Stars: ' + data.repo_stargazers_count;
+        });
+      }
+    );
+  </script>
+</body>
